@@ -1,0 +1,114 @@
+body {
+    background-image: url(cato.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+header {
+    padding-top: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    background-color: #3a3737;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+}
+
+.navbar li {
+    display: inline;
+    padding: 10px;
+}
+
+.navbar li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li:hover{
+    background: #000;
+}
+
+#image-section img:first-child {
+    border-radius: 25px;
+    max-width: auto;
+    height: auto;
+}
+
+.transform-animation{
+    width: 70px;
+    height: 50px;
+    background: #4fca5b;
+    margin: 50px;
+}
+
+.transform-animation.five{
+    animation-duration: 2s;
+    animation-name: skew_animation;
+}
+
+.one:hover{
+    transform: scale(2,2);
+}
+
+.two:hover{
+    transform: rotate(30deg);
+}
+
+.three:hover{
+    transform: translate(200px, 100px);
+}
+
+.four:hover{
+    transform: skew(30deg, 20deg);
+}
+
+@keyframes skew_animation{
+    0%{
+        transform: skew(0deg);
+    }
+    100%{
+        transform: skew(30deg);
+    }
+}
+
+h1::before{
+    content: "";
+    background-image: url(frog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 40px;
+}
+
+h1::after{
+    content: "";
+    background-image: url(frog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 40px;
+}
+
+#text-formatting::first-letter{
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px 5px 5px 0px;
+    float: left;
+    line-height: 15px;
+}
+
+#text-formatting::first-line{
+    text-decoration: underline;
+    color: darkorchid;
+}

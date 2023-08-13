@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First WebPage</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#header-section">Header</a></li>
+        <li><a href="#text-formatting">Text Formatting</a></li>
+        <li><a href="#list-section">Lists</a></li>
+        <li><a href="#image-section">Image</a></li>
+        <li><a href="#table-section">Table</a></li>
+        <li><a href="#form-section">Form</a></li>
+        <li><a href="#extra-section">Extra</a></li>
+        <li><a href="#video-section">Video</a></li>
+        <li><a href="#audio-section">Audio</a></li>
+        <li><a href="#links-section">Links</a></li>
+    </ul>
+
+    <header id="header-section">
+        <h1>Introduction to HTML</h1>
+        <p>Hello World</p>
+
+        <h1>Level 1 heading</h1>
+        <h2>Level 2 heading</h2>
+        <h3>Level 3 heading</h3>
+        <h4>Level 4 heading</h4>
+        <h5>Level 5 heading</h5>
+        <h6>Level 6 heading</h6>
+    </header>
+
+    <br /><br />
+
+    <p id="text-formatting"><b>Water is <mark>vital</mark> for <del>the</del> life and 22<sup>nd</sup> of <ins>March</ins> is the World Water
+            Day.
+            H<sub>2</sub>O is the chmical formula of water.
+            <small><i>We must protect water bodies</i></small></b>
+    </p>
+
+    <br /><br />
+
+    <ul id="list-section">
+        <li>orange</li>
+        <li>apple</li>
+    </ul>
+
+    <ol>
+        <li>orange</li>
+        <li>apple</li>
+    </ol>
+
+    <dl>
+        <dt>Orange</dt>
+        <dd>An orange coloured fruit</dd>
+        <dt>Apple</dt>
+        <dd>A red cloured fruit</dd>
+    </dl>
+
+    <br /><br />
+
+    <div id="image-section">
+    <img src="download.jpg" alt="Tropical Forest" width="500" height="300"><br />
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fecobnb.com%2Fblog%2F2022%2F04%2Fmost-beautiful-forests-connect-nature%2F&psig=AOvVaw1PObEB2snGPAuH0-KfTEBu&ust=1691304629345000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjBtO_2xIADFQAAAAAdAAAAABAR"
+        alt="Tropical Forest">
+    </div>
+
+    <br /><br />
+
+    <table id="table-section">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Emily</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Noah</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Becky</td>
+            <td>23</td>
+        </tr>
+    </table>
+
+    <br /><br />
+
+    <form id="form-section">
+        <label for="firstname">Firstname :</label>
+        <input type="text" id="firstname"><br /><br />
+        <label for="lastname">Lastname :</label>
+        <input type="text" id="lastname"><br /><br />
+
+        <label for="gender">Gender : </label>
+        <input type="radio" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" value="male">
+        <label for="male">Male</label><br /><br />
+
+        <label for="selection">Select your choice :</label><br />
+        <input type="checkbox" id="c1">
+        <label for="c1">Online Lectures</label><br />
+        <input type="checkbox" id="c2">
+        <label for="c2">Physical Lectures</label><br /><br />
+
+        <input type="button" value="submit">
+    </form>
+
+    
+
+    <br /><br />
+
+    <code id="extra-section">var value = "this is a code";</code>
+
+    <br /><br />
+
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+        </fieldset>
+    </form>
+    
+    <br /><br />
+
+    <p>My birthday is on <time datetime="2023-08-15">August 15th, 2023</time>.</p>
+
+    <br /><br />
+
+    <details>
+        <summary>Click to see more information</summary>
+        <p>This is the hidden content that will be revealed when the user clicks on the summary.</p>
+    </details>
+
+    <br /><br />
+
+    <menu>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </menu>
+
+    <br /><br />
+
+    <label for="fruit">Choose a fruit:</label>
+    <input type="text" id="fruit" list="fruits">
+    <datalist id="fruits">
+        <option value="Apple">
+        <option value="Banana">
+        <option value="Orange">
+        <option value="Grapes">
+    </datalist>
+
+    <br /><br />
+
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/7wzR4Ig5pTI"
+        title="GraphQL Basics - Build an app with the SpaceX API" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+        <br/><br/>
+
+        <video id="video-section" width="320" height="240" controls>
+            <source src="FlashCloud Interface.mp4"
+            type="video/mp4">
+        </video>  
+
+        <br/><br/>
+
+        <audio id="audio-section" controls>
+            <source src="Billie Eilish - No Time To Die (Audio) ( 160kbps ).mp3" 
+            type="audio/mp3">
+        </audio>
+
+        <br/><br/>
+
+        <img src="cato.gif" alt="a cat gif">
+
+        <br/><br/>
+
+        <p id="links-section">open link in the same page</p>
+        <a href="https://www.youtube.com/">Youtube</a>
+        <p>open link in a new tab</p>
+        <a href="https://www.youtube.com/" target="blank">Youtube</a>
+
+        <br/><br/>
+
+        <div class="transform-animation one"></div>
+        <div class="transform-animation two"></div>
+        <div class="transform-animation three"></div>
+        <div class="transform-animation four"></div>
+        <div class="transform-animation five"></div>
+</body>
+
+</html>
